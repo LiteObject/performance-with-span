@@ -100,6 +100,12 @@ It allows you to work with memory directly, without unnecessary copying or memor
 By using `Span<T>`, you can write more performant and efficient code in C#.
 
 ---
+## Benchmark Summary
+
+The `PerfTest.cs` file contains all the methods used in the benchmark test.
+
+![Benchmark](./Screenshot.jpg)
+---
 ## Links
 - [Learn/.NET/API browser/System/`Span<T>` Struct](https://learn.microsoft.com/en-us/dotnet/api/system.span-1?view=net-7.0)
 
