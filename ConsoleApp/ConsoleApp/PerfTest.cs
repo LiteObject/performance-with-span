@@ -15,7 +15,7 @@ namespace ConsoleApp
         {
             string input = "Hello World!";
             ReadOnlySpan<char> inputSpan = input.AsSpan();
-            ReadOnlySpan<char> helloSpan = new(new[] { 'H', 'e', 'l', 'l', 'o' });
+            ReadOnlySpan<char> helloSpan = new[] { 'H', 'e', 'l', 'l', 'o' };
 
             _ = inputSpan.Slice(0, helloSpan.Length) == helloSpan;
         }
@@ -25,7 +25,7 @@ namespace ConsoleApp
         {
             string input = "Hello World!";
             ReadOnlySpan<char> inputSpan = input.AsSpan();
-            ReadOnlySpan<char> helloSpan = new(new[] { 'H', 'e', 'l', 'l', 'o' });
+            ReadOnlySpan<char> helloSpan = new[] { 'H', 'e', 'l', 'l', 'o' };
 
             _ = inputSpan.Slice(0, helloSpan.Length).Equals(helloSpan, StringComparison.OrdinalIgnoreCase);
         }
